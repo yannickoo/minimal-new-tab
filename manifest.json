@@ -1,0 +1,13 @@
+{
+   "name": "__MSG_name__",
+   "description": "__MSG_description__",
+   "version": "0.1",
+   "manifest_version": 2,
+   "default_locale": "en",
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "options_page": "options.html",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "web_accessible_resources": ["index.html"]
+}

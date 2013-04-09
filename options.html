@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>Options</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/options.js"></script>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 0.3em;
+      }
+
+      body {
+        margin: 0 auto;
+        width: 500px;
+      }
+
+      #background-image-wrapper {
+        position: relative;
+        width: 300px;
+        line-height: 0;
+      }
+
+      #background-image-wrapper:not(.empty) {
+        cursor: pointer;
+      }
+
+      #background-image-wrapper.empty {
+        border: 2px dashed #ccc;
+        background: none;
+        min-height: 200px;
+      }
+
+      #background-image-wrapper:after {
+        opacity: 0;
+        content: "×";
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -20px;
+        margin-top: 0;
+        font-size: 1em;
+        -webkit-transition: opacity .2s ease-in-out;
+        font-size: 70px;
+        font-weight: bold;
+      }
+
+      #background-image-wrapper:hover:after {
+        opacity: 1;
+      }
+
+      #background-image-wrapper img {
+        max-width: 100%;
+        -webkit-transition: opacity .2s ease-in-out;
+      }
+
+      #background-image-wrapper:hover img {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Options</h1>
+
+    <div id="clock-show-wrapper">
+      <label for="clock-show"><input type="checkbox" id="clock-show"> Show clock</label>
+    </div>
+
+    <div id="clock-show-time-wrapper">
+      <label for="clock-show-time"><input type="checkbox" id="clock-show-time"> Show time</label>
+    </div>
+
+    <div id="clock-show-date-wrapper">
+      <label for="clock-show-date"><input type="checkbox" id="clock-show-date"> Show date</label>
+    </div>
+
+    <div id="clock-color-wrapper">
+      <label for="clock-color">Clock color</label>
+      <input type="color" id="clock-color">
+    </div>
+
+    <div id="background-color-wrapper">
+      <label for="background-color">Background color</label>
+      <input type="color" id="background-color">
+    </div>
+
+    <div>
+      <label>Background image</label>
+      <div id="background-image-wrapper">
+        <img id="background-image">
+      </div>
+    </div>
+  </body>
+</html>

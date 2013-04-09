@@ -1,0 +1,17 @@
+{
+   "datePattern": {
+      "message": "MM/DD/YYYY"
+   },
+   "description": {
+      "message": "Replaces the new tab functionality of Chrome. It displays a background image and a clock."
+   },
+   "name": {
+      "message": "Minimal new tab"
+   },
+   "title": {
+      "message": "New tab"
+   },
+   "removeBackground": {
+      "message": "Do you really want to remove this image?"
+   }
+}

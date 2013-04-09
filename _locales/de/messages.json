@@ -1,0 +1,17 @@
+{
+   "datePattern": {
+      "message": "DD.MM.YYYY"
+   },
+   "description": {
+      "message": "Ersetzt die Neue-Tab-Funktion von Chrome. Sie zeigt ein Hintergrundbild und eine Uhr an."
+   },
+   "name": {
+      "message": "Minimal new tab"
+   },
+   "title": {
+      "message": "Neuer Tab"
+   },
+   "removeBackground": {
+      "message": "M\u00d6chten Sie das Bild wirklich entfernen?"
+   }
+}
